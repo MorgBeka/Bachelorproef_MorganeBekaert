@@ -26,7 +26,7 @@ const Story15 = () => {
 			Nu zal Grote Boom wel snel genezen zijn, denkt Snuiter.
 			</p>
 
-			<img alt="Ga verder" className="story15__arrow" src={Assets.ArrowNext} onClick={ () => history.push('/story/16') }></img>
+			<img alt="Ga verder" className="story15__arrow" src={Assets.ArrowNext2} onClick={ () => history.push('/story/16') }></img>
 
 
 			<Footer audio={Assets.mp3_story15} />

@@ -30,7 +30,7 @@ const Footer = ({audio}) => {
 	}
 
 	// progression
-	const AMOUNTOFSTORIES = 21;
+	const AMOUNTOFSTORIES = 20;
 	const width = ( story / AMOUNTOFSTORIES ) * 100;
 
 	const style = {
@@ -51,7 +51,7 @@ const Footer = ({audio}) => {
 
 	const navigateToNextStory = () => {
 		updateStory(story + 1);
-		if(story !== 21){
+		if(story !== 20){
 			audioRef.current.pause();
 			history.push('/story/' + ( parseInt(window.location.pathname.split('/')[2]) + 1 ));
 		}else{

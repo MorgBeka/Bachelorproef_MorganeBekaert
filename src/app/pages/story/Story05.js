@@ -53,7 +53,7 @@ const Story05 = () => {
 			</div>
 			
 
-			<img alt="Ga verder" className="story05__arrow" src={Assets.ArrowNext} onClick={ () => history.push('/story/6') }></img>
+			<img alt="Ga verder" className="story05__arrow" src={Assets.ArrowNext2} onClick={ () => history.push('/story/6') }></img>
 
 
 			<Footer audio={Assets.mp3_story5} />

@@ -18,7 +18,7 @@ const Story00 = () => {
 			</div>
 			<img alt="Grote Boom" className="story00__tree" src={Assets.TreeStart}></img>
 			
-			<img alt="Ga verder" className="story00__arrow" src={Assets.ArrowNext} onClick={ () => history.push('/story/1') }></img>
+			<img alt="Ga verder" className="story00__arrow" src={Assets.ArrowNext2} onClick={ () => history.push('/story/1') }></img>
 
 		</div>
 	)

@@ -37,6 +37,7 @@ import SkyRiver from './story/background/SkyRiver.png';
 //  Buttonns
 import ArrowBack from './story/buttons/ArrowBack.png';
 import ArrowNext from './story/buttons/ArrowNext.png';
+import ArrowNext2 from './story/buttons/ArrowNext2.png';
 import ButtonHome from './story/buttons/ButtonHome.png';
 import ButtonPause from './story/buttons/ButtonPause.png';
 import ButtonPlay from './story/buttons/ButtonPlay.png';
@@ -128,6 +129,7 @@ export {
 	//  Buttons
 	ArrowBack,
 	ArrowNext,
+	ArrowNext2,
 	ButtonHome,
 	ButtonPause,
 	ButtonPlay,

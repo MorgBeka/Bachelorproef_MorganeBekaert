@@ -17,7 +17,7 @@ const Story02 = () => {
 			<img alt="Grote Boom" className="story02__tree" src={Assets.TreeStart}></img>
 			<div className="story02__wrapper" onClick={ () => history.push('/story/3') }>
 				<h2>Gaan jullie mee met Snuiter in het bos?</h2>
-				<img alt="Ga verder" className="story02__wrapper-arrow" src={Assets.ArrowNext}></img>
+				<img alt="Ga verder" className="story02__wrapper-arrow" src={Assets.ArrowNext2}></img>
 			</div>
 
 			
