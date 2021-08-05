@@ -24,7 +24,7 @@ import { Story21 } from './story/story21/Story21'
 
 //Other
 import { default as Menu } from './other/Menu'
-import { default as Thoughts } from './other/Thoughts'
+import { Thoughts } from './other/thoughts/Thoughts'
 
 export {
 	//Story
