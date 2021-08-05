@@ -1,0 +1,35 @@
+@import '../../../_sass/abstracts/';
+
+.story12{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	&__tree {
+		position: absolute;
+		height: 100vh;
+		right: 0;
+	}
+	&__snuitertje {
+		position: absolute;
+		bottom: 8vh;
+		left: 15vw;
+		height: 366px;
+	}	
+	&__text {
+		position: absolute;
+		margin: 0;
+		top: 12vh; 
+		left: 6vw;
+		font-size: 24px;
+		text-align: center;
+		color: $color-darkBrown;
+		width: 35vw;
+	}
+	&__arrow {
+		position: absolute;
+		top: 35vh; 
+		left: 10vw;
+		width: 272px;
+		height: 128px;
+		}
+}

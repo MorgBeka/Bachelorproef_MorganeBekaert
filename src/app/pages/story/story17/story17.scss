@@ -1,0 +1,42 @@
+@import '../../../_sass/abstracts/';
+
+.story17{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	&__tree {
+		position: absolute;
+		height: 100vh;
+		right: 0;
+	}
+	&__snuitertje {
+		position: absolute;
+		bottom: 7vh;
+		left: 20vw;
+		height: 366px;
+	}
+	&__magnifyingGlass{
+		position: absolute;
+		right: 8vw;
+		top: 13vh;
+		width: 215px;
+		height: 210px;
+	}
+	&__doctor{
+		transform: scale(-1,1);		
+		width: 201px;
+		height: 261px;
+		padding-right: 900px;
+		padding-top: 210px;	
+	}
+	&__text {
+		position: absolute;
+		margin: 0;
+		top: 25vh; 
+		left: 10vw;
+		font-size: 24px;
+		text-align: center;
+		color: $color-darkBrown;
+		width: 35vw;
+	}
+}

@@ -1,0 +1,63 @@
+@import '../../../_sass/abstracts/';
+
+.story10{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	&__sun {
+		position: absolute;
+		right: 0;
+		width: 281px;
+		height: 272px;
+	}
+	&__bird {
+		position: absolute;
+		right: 0;
+		padding: 80px 60px;
+		width: 320px;
+		height: 186px;
+	}
+	&__tree {
+		position: absolute;
+		height: 100vh;
+		max-width: 80vw;
+	}
+	&__medicin {
+		position: absolute;
+		top: 29vh;
+		left: 2vw;
+		width: 22vw;
+		height: 30vh;
+	}
+	&__plaster {
+		position: absolute;
+		width: 13vw;
+		height: 14vh;
+		left: 2vw;
+	}	
+	&__sickBranch {
+		position: absolute;
+		bottom: 0;
+		left: 31vw;
+		bottom: 10vh;
+		width: 337px;
+		height: 246px;
+	}
+	&__snuitertje {
+		position: absolute;
+		bottom: 10vh;
+		right: 0;
+		width: 40px;
+		height: 326px;
+	}
+	&__text {
+		position: absolute;
+		margin: 0;
+		top: 48vh; 
+		right: 6vw;
+		font-size: 22px;
+		text-align: center;
+		color: $color-brown;
+		width: 25vw;	
+}
+}

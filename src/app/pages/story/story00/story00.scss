@@ -1,0 +1,39 @@
+@import '../../../_sass/abstracts/';
+
+.story00 {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	&__wrapper {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		top: 4vh;
+		margin-left: 18vw;
+		align-items: center;
+		h1 {
+			font-size: 24px;
+			color: $color-brown;
+		}
+		&-turn {
+			width: 278px;
+			height: 188px;
+			padding-top: 10vh;
+			padding-left: 10vw;
+		}
+	}
+	&__tree {
+		position: absolute;
+		bottom: 0;
+		width: 900px;
+		height: 674px;
+	}
+	&__arrow {
+		position: absolute;
+		top: 50vh; 
+		right: 0;
+		padding: 0 130px;
+		width: 272px;
+		height: 128px;
+		}
+}

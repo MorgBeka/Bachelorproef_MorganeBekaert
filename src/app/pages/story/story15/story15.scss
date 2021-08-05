@@ -1,0 +1,52 @@
+@import '../../../_sass/abstracts/';
+
+.story15{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	&__bigStone {
+		position: absolute;
+		bottom: 30vh;
+		right: 0;
+		width: 722px;
+		height: 396px;
+	}
+	&__snuitertje {
+		position: absolute;
+		top: 2vh;
+		right: 15vw;
+		height: 336px;
+	}
+	&__snuitertje2 {
+		position: absolute;
+		bottom: 0;
+		right: 15vw;
+		height: 336px;
+		transform: rotate(180deg);
+		opacity: 50%;
+	}
+	&__stone{
+		position: absolute;
+		top: 13vh;
+		left: 15vw;
+		width: 646px;
+		height: 514px;
+	}
+	&__text {
+		position: absolute;
+		margin: 0;
+		top: 10vh; 
+		left: 10vw;
+		font-size: 24px;
+		text-align: center;
+		color: $color-brown;
+		width: 35vw;
+	}
+	&__arrow {
+		position: absolute;
+		bottom: 11vh; 
+		left: 10vw;
+		width: 272px;
+		height: 128px;
+		}
+}

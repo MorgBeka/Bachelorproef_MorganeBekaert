@@ -1,0 +1,50 @@
+@import '../../../_sass/abstracts/';
+
+.story21{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	&__sun {
+		position: absolute;
+		right: 0;
+		width: 281px;
+		height: 272px;
+	}
+	&__tree {
+		position: absolute;
+		height: 90vh;
+		right: 0;
+	}
+	&__sheepBunnny {
+		position: absolute;
+		bottom: 5vh;
+		left: 10vw;
+		height: 393px;
+	}
+	&__jar{
+		position: absolute;
+		bottom: 7vh;
+		right: 6vw;
+		width: 145px;
+		height: 244px;
+	}
+	&__text {
+		position: absolute;
+		margin: 0;
+		top: 15vh; 
+		left: 4vw;
+		font-size: 24px;
+		text-align: center;
+		color: $color-brown;
+		width: 25vw;
+	}
+	&__text2 {
+		position: absolute;
+		right: 4vw;
+		bottom: 30vh;
+		font-size: 24px;
+		text-align: center;
+		color: $color-brown;
+		width: 20vw;
+	}
+}

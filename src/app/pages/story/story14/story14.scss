@@ -1,0 +1,48 @@
+@import '../../../_sass/abstracts/';
+
+.story14{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	&__tree {
+		position: absolute;
+		height: 100vh;
+		right: 0;
+	}
+	&__crown{
+		position: absolute;	
+		width: 164px;
+		height: 106px;
+		bottom: 12vh;
+		left: 50vw;
+	}
+	&__sheep{
+		position: absolute;
+		right: 0;
+		width: 840px;
+		height: 560px;
+	}
+	&__text {
+		position: absolute;
+		margin: 0;
+		top: 13vh; 
+		left: 6vw;
+		font-size: 24px;
+		text-align: center;
+		color: $color-darkBrown;
+		width: 30vw;
+	}
+	&__snuitertje {
+		position: absolute;
+		bottom: 8vh;
+		left: 10vw;
+		height: 317px;
+	}
+	#dropzone14 {
+		position: absolute;
+		bottom: 8vh;
+		left: 10vw;
+		width: 180px;
+		height: 270px;
+	}	
+}

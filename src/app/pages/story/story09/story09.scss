@@ -1,0 +1,105 @@
+@import '../../../_sass/abstracts/';
+
+.story09{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	&__sun {
+		position: absolute;
+		right: 0;
+		width: 281px;
+		height: 272px;
+	}
+	&__bird {
+		position: absolute;
+		right: 0;
+		padding: 80px 60px;
+		width: 320px;
+		height: 186px;
+	}
+	&__tree {
+		position: absolute;
+		height: 100vh;
+		max-width: 80vw;
+	}
+	&__medicin {
+		position: absolute;
+		top: 29vh;
+		left: 2vw;
+		width: 22vw;
+		height: 30vh;
+	}
+	&__plaster {
+		position: absolute;
+		width: 13vw;
+		height: 14vh;
+		left: 2vw;
+	}
+	&__sickBranch {
+		position: absolute;
+		bottom: 0;
+		left: 31vw;
+		bottom: 10vh;
+		width: 337px;
+		height: 246px;
+	}
+	&__stone{
+		position: absolute;
+		width: 41px;
+		height: 35px;
+		bottom: 25vh;
+		right: 25vw;
+		
+
+	}
+	&__jar{
+		position: absolute;
+		bottom: 8vh;
+		right: 23vw;
+		width: 128px;
+		height: 166px;
+	}
+	&__doctor {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 359px;
+		height: 512px;
+	}
+	
+	&__text {
+		position: absolute;
+		margin: 0;
+		top: 30vh; 
+		right: 0;
+		right: 6vw;
+		font-size: 22px;
+		text-align: center;
+		color: $color-brown;
+		width: 30vw;	
+	}
+	&__text2 {
+		position: absolute;
+		margin: 0;
+		left: 15vw;
+		bottom: 3vh;
+		font-size: 22px;
+		text-align: center;
+		color: $color-brown;
+		width: 30vw;
+	}
+	&__snuitertje {
+		position: absolute;
+		bottom: 13vh;
+		left: 44vw;
+		width: 240px;
+		height: 366px;
+	}
+	#dropzone9 {
+		position: absolute;
+		bottom: 13vh;
+		left: 44vw;
+		width: 200px;
+		height: 350px;
+	}	
+}

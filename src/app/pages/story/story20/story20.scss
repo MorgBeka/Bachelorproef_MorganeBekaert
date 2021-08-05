@@ -1,0 +1,60 @@
+@import '../../../_sass/abstracts/';
+
+.story20{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	&__tree {
+		position: absolute;
+		height: 100vh;
+		right: 0;
+	}
+	&__snuitertje {
+		position: absolute;
+		bottom: 8vh;
+		left: 17vw;
+		height: 366px;
+	}
+	&__jar{
+		position: absolute;
+		left: 43vw;
+		bottom: 10vh;
+		width: 163px;
+		height: 211px;
+	}
+	&__acornsRight {
+		position: absolute;
+		bottom: 11vh;
+		right: 30vh;
+		height: 177px;
+	}
+	&__acornsLeft {
+		position: absolute;
+		bottom: 3vh;
+		left: 27vw;
+		height: 177px;
+	}
+	&__text {
+		position: absolute;
+		margin: 0;
+		top: 20vh; 
+		left: 8vw;
+		font-size: 24px;
+		text-align: center;
+		color: $color-darkBrown;
+		width: 25vw;
+	}
+	&__acorn {
+		position: absolute;
+		bottom: 30vh;
+		right: 17vw;
+		height: 71px;
+	}
+	#dropzone20 {
+		position: absolute;
+		left: 43vw;
+		bottom: 10vh;
+		width: 163px;
+		height: 211px;
+	}
+}
