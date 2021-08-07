@@ -6,11 +6,11 @@ export function setCurrentStory(storyNumber) {
 }
 
 export function getLastStory() {
-  const storyNumberStr = localstorage.getItem(CURRENT_STORY_KEY);
+  const storyNumberStr = localStorage.getItem(CURRENT_STORY_KEY);
   if (storyNumberStr == null) return 0;
   return parseInt(storyNumberStr);
 }
 
 export function hasSavedStory() {
-  return localstorage.getItem(CURRENT_STORY_KEY) != null;
+  return localStorage.getItem(CURRENT_STORY_KEY) != null;
 }
