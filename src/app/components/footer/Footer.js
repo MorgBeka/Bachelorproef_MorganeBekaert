@@ -5,28 +5,38 @@ import * as Images from '../../assets';
 
 import './footer.scss';
 
-const Footer = ({audio}) => {
+const Footer = (props) => {
 	const history = useHistory();
 
 
 	const {story, updateStory} = useContext(ProgressionStoryContext)
 	
-	useEffect(() => {
-		playAudio()
-	},[])
+	// useEffect(() => {
+	// 	playAudio()
+	// },[])
+
+	const isPlaying = props.currentAudio != null ? props.currentAudio.isPlaying : false
+
+	if (props.currentAudio) {
+		console.log(props.currentAudio.isPlaying)
+	}
 
 	// AudioPlayer
-	const [ isPlaying, setIsPlaying ] = useState(true);
 	//instantie vh audioobject
-	const audioRef = useRef(new Audio(audio));
+	// const audioRef = useRef(new Audio(audio));
 		
 	const playAudio = () => {
-		audioRef.current.play();
-		setIsPlaying(false);
+		// console.log("Audio started");
+		// audioRef.current.play();
+		// setIsPlaying(false);
+		if (props.currentAudio != null) {
+			props.currentAudio.play()
+		}
 	}
 	const pauseAudio = () => {
-		audioRef.current.pause();
-		setIsPlaying(true);
+		if (props.currentAudio != null) {
+			props.currentAudio.pause()
+		}
 	}
 
 	// progression
@@ -40,22 +50,20 @@ const Footer = ({audio}) => {
 
 	const navigateToPreviousStory = () => {
 		updateStory(story - 1);
+		pauseAudio();
 		if(story !== 1){
-			audioRef.current.pause();
 			history.push('/story/' + ( parseInt(window.location.pathname.split('/')[2]) - 1 ));
 		}else{
-			audioRef.current.pause();
 			history.push('/');
 		}
 	}
 
 	const navigateToNextStory = () => {
 		updateStory(story + 1);
+		pauseAudio();
 		if(story !== 20){
-			audioRef.current.pause();
 			history.push('/story/' + ( parseInt(window.location.pathname.split('/')[2]) + 1 ));
 		}else{
-			audioRef.current.pause();
 			history.push('/');
 		}
 	}
@@ -65,9 +73,9 @@ const Footer = ({audio}) => {
 
 			<div className="footer__audioplayer">
 				{/* When the toggle is TRUE, show the play button */}
-				{isPlaying && <img alt="play" className="footer__audioplayer-play" src={Images.ButtonPlay} onClick={() => playAudio()}></img>}
+				{!isPlaying && <img alt="play" className="footer__audioplayer-play" src={Images.ButtonPlay} onClick={() => playAudio()}></img>}
 				{/* When the toggle is FALSE, show the pause button */}
-				{!isPlaying && <img alt="pause" className="footer__audioplayer-pause" src={Images.ButtonPause} onClick={() => pauseAudio()}></img>}
+				{isPlaying && <img alt="pause" className="footer__audioplayer-pause" src={Images.ButtonPause} onClick={() => pauseAudio()}></img>}
 			</div>
 
 			<div className="footer__progression">

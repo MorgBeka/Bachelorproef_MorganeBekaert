@@ -1,6 +1,7 @@
 import { default as React, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import Draggable from 'react-draggable';
+import { useAudio } from "../../../utilities/audio";
 
 import * as Assets from '../../../assets';
 import { Header, Footer } from '../../../components';
@@ -24,6 +25,7 @@ export const Story14 = () => {
 		e.classList.add('hovered');
 	}
 
+	const currentAudio = useAudio(Assets.mp3_story14);
 
 	return (
 		<div className="story14">
@@ -48,7 +50,7 @@ export const Story14 = () => {
 
 			<div id="dropzone14" onMouseOver={() => onDropAreaMouseHover(crownRef.current)}></div>
 
-			<Footer audio={Assets.mp3_story14} />
+			<Footer currentAudio={currentAudio} />
 
 		</div>
 	)

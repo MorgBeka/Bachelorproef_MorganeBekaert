@@ -2,11 +2,14 @@ import { default as React } from 'react';
 import { useHistory } from 'react-router-dom';
 import * as Assets from '../../../assets';
 import { Header, Footer } from '../../../components';
+import { useAudio } from "../../../utilities/audio";
 
 import './story21.scss';
 
 export const Story21 = () => {
 	const history = useHistory();
+
+	const currentAudio = useAudio(Assets.mp3_story21);
 
 	return (
 		<div className="story21">
@@ -27,7 +30,7 @@ export const Story21 = () => {
 			En in de pot groeit ondertussen een Kleine Boom…
 			</p>
 
-			<Footer audio={Assets.mp3_story21} />
+			<Footer currentAudio={currentAudio} />
 
 		</div>
 	)

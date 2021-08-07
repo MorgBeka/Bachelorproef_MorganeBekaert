@@ -1,12 +1,14 @@
-import { default as React } from 'react';
+import { default as React, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import * as Assets from '../../../assets';
 import { Header, Footer  } from '../../../components';
+import { useAudio } from "../../../utilities/audio";
 
 import './story02.scss';
 
 export const Story02 = () => {
 	const history = useHistory();
+	const currentAudio = useAudio(Assets.mp3_story2);
 
 	return (
 		<div className="story02">
@@ -19,10 +21,8 @@ export const Story02 = () => {
 				<h2>Gaan jullie mee met Snuiter in het bos?</h2>
 				<img alt="Ga verder" className="story02__wrapper-arrow" src={Assets.ArrowNext2}></img>
 			</div>
-
 			
-			<Footer audio={Assets.mp3_story2} />
-
+			<Footer currentAudio={currentAudio} />
 		</div>
 	)
 }

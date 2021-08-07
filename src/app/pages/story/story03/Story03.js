@@ -2,11 +2,14 @@ import { default as React, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import * as Assets from '../../../assets';
 import { Header, Footer } from '../../../components';
+import { useAudio } from "../../../utilities/audio";
 
 import './story03.scss';
 
 export const Story03 = () => {
 	const history = useHistory();
+
+	const currentAudio = useAudio(Assets.mp3_story3);
 
 	const [ score, setScore ] = useState(0);
 
@@ -45,7 +48,7 @@ export const Story03 = () => {
 				{ game() }
 			</div>
 
-			<Footer audio={Assets.mp3_story3} />
+			<Footer currentAudio={currentAudio} />
 
 		</div>
 	)

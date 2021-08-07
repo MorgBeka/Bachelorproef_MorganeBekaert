@@ -3,11 +3,13 @@ import { useHistory } from 'react-router-dom';
 import Draggable from 'react-draggable';
 import * as Assets from '../../../assets';
 import { Header, Footer } from '../../../components';
+import { useAudio } from "../../../utilities/audio";
 
 import './story07.scss';
 
 export const Story07 = () => {
 	const history = useHistory();
+	const currentAudio = useAudio(Assets.mp3_story7);
 
 	const branchRef = useRef();
 
@@ -42,7 +44,7 @@ export const Story07 = () => {
 
 			<div id="dropzone7" onMouseOver={() => onDropAreaMouseHover(branchRef.current)}></div>
 			
-			<Footer audio={Assets.mp3_story7} />
+			<Footer currentAudio={currentAudio} />
 
 		</div>
 	)

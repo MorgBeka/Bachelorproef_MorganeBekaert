@@ -2,11 +2,14 @@ import { default as React } from 'react';
 import { useHistory } from 'react-router-dom';
 import * as Assets from '../../../assets';
 import { Header, Footer } from '../../../components';
+import { useAudio } from "../../../utilities/audio";
 
 import './story13.scss';
 
 export const Story13 = () => {
 	const history = useHistory();
+
+	const currentAudio = useAudio(Assets.mp3_story13);
 
 	return (
 		<div className="story13">
@@ -40,7 +43,7 @@ export const Story13 = () => {
 
 			<img alt="Ga verder" className="story13__arrow" src={Assets.ArrowNext} onClick={ () => history.push('/story/14') }></img>
 
-			<Footer audio={Assets.mp3_story13} />
+			<Footer currentAudio={currentAudio} />
 
 		</div>
 	)

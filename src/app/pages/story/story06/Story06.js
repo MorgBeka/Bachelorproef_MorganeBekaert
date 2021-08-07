@@ -3,11 +3,14 @@ import { useHistory } from 'react-router-dom';
 import Draggable from 'react-draggable';
 import * as Assets from '../../../assets';
 import { Header, Footer } from '../../../components';
+import { useAudio } from "../../../utilities/audio";
 
 import './story06.scss';
 
 export const Story06 = () => {
 	const history = useHistory();
+
+	const currentAudio = useAudio(Assets.mp3_story6);
 
 	// 1. Make the ref for the image
 	const sawRef = useRef();
@@ -53,7 +56,7 @@ export const Story06 = () => {
 
 			<div id="dropzone6" onMouseOver={() => onDropAreaMouseHover(sawRef.current)}></div>
 
-			<Footer audio={Assets.mp3_story6} />
+			<Footer currentAudio={currentAudio} />
 		</div>
 	
 	)

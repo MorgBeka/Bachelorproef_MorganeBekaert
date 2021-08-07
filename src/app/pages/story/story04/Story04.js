@@ -1,10 +1,12 @@
 import { default as React } from 'react';
 import * as Assets from '../../../assets';
 import { Header, Footer } from '../../../components';
+import { useAudio } from "../../../utilities/audio";
 
 import './story04.scss';
 
 export const Story04 = () => {
+	const currentAudio = useAudio(Assets.mp3_story4);
 
     const styleSheet = document.styleSheets[0];
 	const keyframes = 
@@ -37,7 +39,7 @@ export const Story04 = () => {
 			om de houtwormpjes te verjagen.'
 			</p>
 
-			<Footer audio={Assets.mp3_story4} />
+			<Footer currentAudio={currentAudio} />
 
 		</div>
 	)
