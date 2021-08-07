@@ -1,15 +1,11 @@
-import { default as React, useContext } from 'react';
-import { useHistory } from 'react-router-dom';
-import {ProgressionStoryContext} from '../../App.js'
+import { default as React } from 'react';
 import * as Images from '../../assets';
 import { Button } from '../../components';
+import { hasSavedStory, getSavedStory } from "../../utilities/currentPage";
 
 import './menu.scss';
 
 const Menu = () => {
-	const history = useHistory();
-	const {story} = useContext(ProgressionStoryContext)
-
 	return (
 		<div className="menu">
 
@@ -17,11 +13,9 @@ const Menu = () => {
 		
 			<div className="menu__wrapper">
 				<Button text="START VERHAAL" path="/story/0" />
-				<Button text="LEES VERDER" path={`/story/${story}`} />
+				{hasSavedStory() && <Button text="LEES VERDER" path={`/story/${getSavedStory()}`} />}
  				<Button text="MIJN GEDACHTEN" path="/thoughts" />
 			</div>
-
-
 
 		</div>
 	)

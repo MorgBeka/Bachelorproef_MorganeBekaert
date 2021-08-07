@@ -5,7 +5,7 @@ export function setCurrentStory(storyNumber) {
   localStorage.setItem(CURRENT_STORY_KEY, storyNumber);
 }
 
-export function getLastStory() {
+export function getSavedStory() {
   const storyNumberStr = localStorage.getItem(CURRENT_STORY_KEY);
   if (storyNumberStr == null) return 0;
   return parseInt(storyNumberStr);

@@ -23,7 +23,6 @@ export const Story08 = () => {
 		e.classList.add('hovered');
 	}
 
-
 	return (
 		<div className="story08">
 			<Header/>

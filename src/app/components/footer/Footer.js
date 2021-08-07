@@ -1,6 +1,5 @@
 import { default as React, useState, useEffect, useRef, useContext } from 'react';
-import { useHistory } from 'react-router-dom';
-import {ProgressionStoryContext} from '../../App.js'
+import { useHistory, useParams } from 'react-router-dom';
 import * as Images from '../../assets';
 
 import './footer.scss';
@@ -8,9 +7,9 @@ import './footer.scss';
 const Footer = (props) => {
 	const history = useHistory();
 
-	const {story, updateStory} = useContext(ProgressionStoryContext)
-
 	const isPlaying = props.currentAudio != null ? props.currentAudio.isPlaying : false
+
+	const params = useParams();
 		
 	const playAudio = () => {
 		if (props.currentAudio != null) {
@@ -24,8 +23,10 @@ const Footer = (props) => {
 	}
 
 	// progression
-	const AMOUNTOFSTORIES = 20;
-	const width = ( story / AMOUNTOFSTORIES ) * 100;
+	const AMOUNTOFSTORIES = 21;
+	// TODO: story
+	const storyId = parseInt(params.id);
+	const width = ( storyId / AMOUNTOFSTORIES ) * 100;
 
 	const style = {
 		height: '14px',
@@ -33,20 +34,20 @@ const Footer = (props) => {
 	}
 
 	const navigateToPreviousStory = () => {
-		updateStory(story - 1);
+		// updateStory(story - 1);
 		pauseAudio();
-		if(story !== 1){
-			history.push('/story/' + ( parseInt(window.location.pathname.split('/')[2]) - 1 ));
+		if(storyId !== 1){
+			history.push(`/story/${storyId - 1}`);
 		}else{
 			history.push('/');
 		}
 	}
 
 	const navigateToNextStory = () => {
-		updateStory(story + 1);
+		// updateStory(story + 1);
 		pauseAudio();
-		if(story !== 20){
-			history.push('/story/' + ( parseInt(window.location.pathname.split('/')[2]) + 1 ));
+		if(storyId < 21){
+			history.push(`/story/${storyId + 1}`);
 		}else{
 			history.push('/');
 		}
