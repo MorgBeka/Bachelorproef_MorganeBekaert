@@ -8,7 +8,6 @@ import './footer.scss';
 const Footer = (props) => {
 	const history = useHistory();
 
-
 	const {story, updateStory} = useContext(ProgressionStoryContext)
 
 	const isPlaying = props.currentAudio != null ? props.currentAudio.isPlaying : false
