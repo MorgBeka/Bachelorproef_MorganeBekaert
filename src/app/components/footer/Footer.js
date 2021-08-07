@@ -10,25 +10,10 @@ const Footer = (props) => {
 
 
 	const {story, updateStory} = useContext(ProgressionStoryContext)
-	
-	// useEffect(() => {
-	// 	playAudio()
-	// },[])
 
 	const isPlaying = props.currentAudio != null ? props.currentAudio.isPlaying : false
-
-	if (props.currentAudio) {
-		console.log(props.currentAudio.isPlaying)
-	}
-
-	// AudioPlayer
-	//instantie vh audioobject
-	// const audioRef = useRef(new Audio(audio));
 		
 	const playAudio = () => {
-		// console.log("Audio started");
-		// audioRef.current.play();
-		// setIsPlaying(false);
 		if (props.currentAudio != null) {
 			props.currentAudio.play()
 		}
