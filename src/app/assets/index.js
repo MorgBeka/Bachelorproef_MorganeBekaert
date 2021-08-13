@@ -50,6 +50,9 @@ import SnuitertjeBlanket from './story/snuitertjes/SnuitertjeBlanket.png';
 import SnuitertjeCrown from './story/snuitertjes/SnuitertjeCrown.png';
 import SnuitertjeHug from './story/snuitertjes/SnuitertjeHug.png';
 import SnuitertjeStand from './story/snuitertjes/SnuitertjeStand.png';
+import SnuitertjeWithoutLeg from './story/snuitertjes/SnuitertjeWithoutLeg.png';
+import Leg from './story/snuitertjes/Leg.png';
+
 //	Trees
 import OtherTree from './story/trees/OtherTree.png';
 import SickTree from './story/trees/SickTree.png';
@@ -142,6 +145,8 @@ export {
 	SnuitertjeCrown,
 	SnuitertjeHug,
 	SnuitertjeStand,
+	SnuitertjeWithoutLeg,
+	Leg,
 	// Trees 
 	OtherTree,
 	SickTree,

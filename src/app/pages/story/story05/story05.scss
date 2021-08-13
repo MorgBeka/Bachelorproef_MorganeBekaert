@@ -22,6 +22,8 @@
 		left: 60%;
 		width: 212px;
 		height: 192px;
+		z-index: 11;
+		opacity: 0.8;
 	}
 	&__bird {
 		position: absolute;
@@ -53,6 +55,7 @@
 		width: 450px;
 		font-size: 24px;
 		color: $color-brown;
+		z-index: 11;
 		
 	}
 	&__blanket{

@@ -29,12 +29,26 @@
 		width: 240px;
 		height: 366px;
 	}
+	&__snuitertje-leg {
+		position: absolute;
+		top: calc(1vh + 238px);
+		left:  calc(5vw + 130px);
+		width: 65px;
+		height: 101.5px;
+		object-fit: contain;
+		transform-origin: top center;
+		animation: leg cubic-bezier(.81,.33,.35,.91) 2.5s infinite;
+	}
 	&__doctor {
 		position: absolute;
 		bottom: 0;
 		width: 430px;
 		height: 512px;
-	}
+
+		animation: 
+			doctor ease-out 10s forwards, 
+			doctor_listining ease-in-out 10s 10s infinite;
+	}	
 	&__text {
 		position: absolute;
 		top: 54vh; 
@@ -44,5 +58,30 @@
 		text-align: center;
 		color: $color-brown;
 		width: 400px;
+	}
+}	
+
+@keyframes doctor {
+	0% {transform: translateX(30vw) rotate(10deg) translateY(20px); } 
+	50% {transform: rotate(-5deg) translateY(20px); } 
+	100% {transform: translateX(70px) translateY(20px); }
+}
+
+@keyframes doctor_listining {
+	0% {transform: translateX(70px) translateY(20px); }
+	25% {transform: rotate(-10deg) translateY(70px) translateX(20px); }
+	50% {transform: rotate(-10deg) translateY(100px) translateX(70px); }
+	75% {transform: rotate(-5deg) translateY(20px) translateX(70px); }
+}
+
+@keyframes leg {
+	0% {
+		transform: rotate(23deg) translate(-3px, 6px);
+	}
+	50%{
+		transform: rotate(-10deg) translate(-10px, -10px);
+	}
+	100% {
+		transform: rotate(23deg) translate(-3px, 6px);
 	}
 }
