@@ -14,7 +14,7 @@ export const Story01 = () => {
 	return (
 		<div className="story01">
 			<Header/>
-			<h1>Waar willen jullie starten met lezen?</h1>
+			<h1>Waar wil je graag starten met lezen?</h1>
 			<img alt="Grpte Boom" className="story01__tree" src={Assets.TreeStart} ></img>
 			<div className="story01__wrapper">
 				<h2 onClick={ () => history.push('/story/2') }>Volledige verhaal</h2>

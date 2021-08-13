@@ -11,7 +11,8 @@ export const Story04 = () => {
 	return (
 		<div className="story04">
 			<Header/>
-			<img alt="Zon" className="story04__sun" src={Assets.Sun}></img>
+			<img alt="Zonnestralen" className="story04__sunshine" src={Assets.Sunshine}></img>
+			<img alt="Zon" className="story04__sun" src={Assets.Sun2}></img>
 			<img alt="Vogel" className="story04__bird" src={Assets.Bird}></img>
 			<img alt="Zieke tak" className="story04__tree" src={Assets.TreeSickBranch}></img>
 			<img alt="Been Snuitertje" className="story04__snuitertje-leg" src={Assets.Leg}></img>

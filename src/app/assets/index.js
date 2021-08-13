@@ -28,6 +28,8 @@ import SickBranch2 from './story/atributes/SickBranch2.png';
 import Stone from './story/atributes/Stone.png';
 import Stone2 from './story/atributes/Stone2.png';
 import Sun from './story/atributes/Sun.png';
+import Sun2 from './story/atributes/Sun2.png';
+import Sunshine from './story/atributes/Sunshine.png';
 import TurnScreen from './story/atributes/TurnScreen.png';
 //	Background
 import BackgroundDark from './story/background/BackgroundDark.png';
@@ -123,6 +125,8 @@ export {
 	Stone,
 	Stone2,
 	Sun,
+	Sun2,
+	Sunshine,
 	TurnScreen,
 	// Background
 	BackgroundDark,
