@@ -27,7 +27,7 @@
 		margin: 0;
 		top: 6vh; 
 		left: 11vw;
-		font-size: 20px;
+		font-size: 16px;
 		text-align: center;
 		color: $color-brown;
 		width: 35vw;
@@ -35,11 +35,17 @@
 	&__text2 {
 		position: absolute;
 		top: 54vh; 
-		left: 11vw;
-		font-size: 20px;
+		left: 13vw;
+		font-size: 16px;
 		text-align: center;
 		color: $color-brown;
 		width: 50vw;
 	}
-	
+	&__arrow {
+		position: absolute;
+		bottom: 8vh; 
+		left: 15vw;
+		width: 272px;
+		height: 128px;
+		}
 }

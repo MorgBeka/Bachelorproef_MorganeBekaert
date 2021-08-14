@@ -30,7 +30,6 @@ export const Story09 = () => {
 		<div className="story09">
 			<Header/>
 			<img alt="Zon" className="story09__sun" src={Assets.Sun}></img>
-			<img alt="Vogel" className="story09__bird" src={Assets.Bird}></img>
 			<img alt="Grote Boom" className="story09__tree" src={Assets.TreeWithoutSickBranch}></img>
 			<img alt="Medicijn" className="story09__medicin" src={Assets.Medicin}></img>
 			<img alt="Pleister" className="story09__plaster" src={Assets.Plaster}></img>

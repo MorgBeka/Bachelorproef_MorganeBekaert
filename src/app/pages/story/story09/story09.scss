@@ -48,9 +48,7 @@
 		width: 41px;
 		height: 35px;
 		bottom: 25vh;
-		right: 25vw;
-		
-
+		right: 25vw;	
 	}
 	&__jar{
 		position: absolute;
@@ -70,7 +68,7 @@
 	&__text {
 		position: absolute;
 		margin: 0;
-		top: 30vh; 
+		top: 10vh; 
 		right: 0;
 		right: 6vw;
 		font-size: 19px;
@@ -82,7 +80,7 @@
 		position: absolute;
 		margin: 0;
 		left: 15vw;
-		bottom: 5vh;
+		bottom: 7vh;
 		font-size:20px;
 		text-align: center;
 		color: $color-brown;
