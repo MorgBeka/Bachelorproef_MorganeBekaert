@@ -31,7 +31,7 @@
 		position: absolute;
 		height: 90vh;
 		right: 0;
-		animation: swing cubic-bezier(.81,.33,.35,.91) 2.5s infinite;
+		animation: swing cubic-bezier(0,0,50,80) 2.5s infinite;
 
 	}
 	&__sheepBunnny {
