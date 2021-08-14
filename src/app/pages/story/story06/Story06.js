@@ -31,7 +31,10 @@ export const Story06 = () => {
 			<img alt="Zon" className="story06__sun" src={Assets.Sun}></img>
 			<img alt="Vogel" className="story06__bird" src={Assets.Bird}></img>
 			<img alt="Grote Boom" className="story06__tree" src={Assets.TreeSickBranch}></img>
-			<img alt="Dokter" className="story06__doctor" src={Assets.DoctorTree}></img>
+
+			<img alt="Dokter" className="story06__doctor" src={Assets.DoctorWithoutLeg}></img>
+			<img alt="Dokter" className="story06__doctor-leg" src={Assets.LegDoctor}></img>
+
 			<img alt="Snuitertje" className="story06__snuitertje" src={Assets.SnuitertjeStand}></img>
 			<img alt="Dokterstas" className="story06__kit" src={Assets.KitWithoutSaw}></img>
 

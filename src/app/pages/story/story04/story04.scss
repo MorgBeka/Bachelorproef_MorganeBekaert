@@ -59,16 +59,15 @@
 	}	
 	&__text {
 		position: absolute;
-		top: 54vh; 
+		top:34vh; 
 		right: 0;
 		padding: 0 60px;
-		font-size: 24px;
+		font-size: 20px;
 		text-align: center;
 		color: $color-brown;
 		width: 400px;
 	}
 }	
-
 @keyframes doctor {
 	0% {transform: translateX(30vw) rotate(10deg) translateY(20px); } 
 	50% {transform: rotate(-5deg) translateY(20px); } 
@@ -80,18 +79,6 @@
 	25% {transform: rotate(-10deg) translateY(70px) translateX(20px); }
 	50% {transform: rotate(-10deg) translateY(100px) translateX(70px); }
 	75% {transform: rotate(-5deg) translateY(20px) translateX(70px); }
-}
-
-@keyframes leg {
-	0% {
-		transform: rotate(23deg) translate(-3px, 6px);
-	}
-	50%{
-		transform: rotate(-10deg) translate(-10px, -10px);
-	}
-	100% {
-		transform: rotate(23deg) translate(-3px, 6px);
-	}
 }
 
 @keyframes sunshine {

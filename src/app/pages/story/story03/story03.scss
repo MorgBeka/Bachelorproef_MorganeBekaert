@@ -16,6 +16,9 @@
 		padding: 80px 60px;
 		width: 320px;
 		height: 186px;
+
+		animation: 
+			bird ease-in-out 25s infinite, 
 	}
 	&__tree {
 		position: absolute;
@@ -33,19 +36,19 @@
 	&__text {
 		position: absolute;
 		right: 0;
-		top: 75%;
+		top: 45%;
 		margin: 0;
 		margin-top: -50px;
 		padding: 0 60px;
 		width: 400px;
 		text-align: center;
-		font-size: 24px;
+		font-size: 20px;
 		color: $color-brown;
 	}
 	&__score {
 		position: absolute;
 		right: 0;
-		top: 90%;
+		top: 70%;
 		margin: 0;
 		margin-top: -50px;
 		padding: 0 240px;
@@ -59,4 +62,10 @@
 		height: 100vh;
 		&-element {}
 	}
+}
+@keyframes bird {
+	0% {transform: translateX(30vw) rotate(10deg) translateY(20px); } 
+	50% {transform: rotate(-5deg) translateY(20px); } 
+	100% {transform: translateX(-80vw) translateY(20px); }
+
 }

@@ -8,13 +8,6 @@ import './story16.scss';
 
 export const Story16 = () => {
 
-	const styleSheet = document.styleSheets[0];
-	const keyframes = 
-	`@-webkit-keyframes doctor {
-        0% {-webkit-transform: translateX(0); } 
-        100% {-webkit-transform: translateX(-45vw) translateY(180px); }
-    }`;
-	styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
 
 	const currentAudio = useAudio(Assets.mp3_story16);
 
@@ -24,8 +17,9 @@ export const Story16 = () => {
 			<img alt="Zon" className="story08__sun" src={Assets.Sun}></img>
 			<img alt="Zieke Grote Boom met sjaal" className="story16__tree" src={Assets.SickTreeSharp}></img>
 			<img alt="Snuitertje" className="story16__snuitertje" src={Assets.SnuitertjeBlanket}></img>
-			<img alt="Dokter" className="story16__doctor" src={Assets.DoctorStand} style={{animation: 'doctor ease-in 20s forwards'}}></img>
-			
+			{/* <img alt="Dokter" className="story16__doctor" src={Assets.DoctorStand}></img> */}
+			<img alt="Dokter" className="story16__doctor" src={Assets.DoctorStand}></img>
+
 			<p className="story16__text">
 			Maar dan komt de dokter alweer. Met nieuwe medicijnen.
 			En Grote Boom wordt weer heel moe en slap. Er zitten nog altijd veel steentjes in de pot.

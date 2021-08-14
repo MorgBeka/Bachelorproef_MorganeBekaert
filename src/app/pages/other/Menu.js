@@ -9,8 +9,10 @@ const Menu = () => {
 	return (
 		<div className="menu">
 
-			<img alt="boom" className="menu__tree" src={Images.TreeStart}></img>
-		
+			<img alt="boom" className="menu__tree" src={Images.TreeStartWithousSnuiter}></img>
+			<img alt="Been Snuitertje" className="menu__snuitertje-leg" src={Images.Leg}></img>
+			<img alt="Snuitertje" className="menu__snuitertje" src={Images.SnuitertjeWithoutLeg}></img>
+
 			<div className="menu__wrapper">
 				<Button text="START VERHAAL" path="/story/0" />
 				{hasSavedStory() && <Button text="LEES VERDER" path={`/story/${getSavedStory()}`} />}

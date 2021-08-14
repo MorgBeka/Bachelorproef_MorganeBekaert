@@ -14,8 +14,9 @@ export const Story21 = () => {
 	return (
 		<div className="story21">
 			<Header/>
-			<img alt="Zon" className="story21__sun" src={Assets.Sun}></img>
-			<img alt="Genezen Grote Boom" className="story21__tree" src={Assets.TreeCured}></img>
+			<img alt="Zonnestralen" className="story21__sunshine" src={Assets.Sunshine}></img>
+			<img alt="Zon" className="story21__sun" src={Assets.Sun2}></img>			<img alt="Genezen Grote Boom" className="story21__tree" src={Assets.TreeCuredWithoutSwing}></img>
+			<img alt="Schommel" className="story21__swing" src={Assets.Swing}></img>
 			<img alt="Schaap en konijn" className="story21__sheepBunnny" src={Assets.SheepBunny}></img>
 			<img alt="Bokaal met boompje" className="story21__jar" src={Assets.JarWithTree}></img>
 
