@@ -10,7 +10,7 @@ const Button = ({text, path}) => {
 	return (
 		<div className="button" onClick={ () => history.push(path) }>
 			<h1 className="button__text">{text}</h1>
-			<img className="button__img" src={Assets.Button} ></img>
+			<img alt="Knop" className="button__img" src={Assets.Button} ></img>
 		</div>
 	)
 }
