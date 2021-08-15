@@ -78,7 +78,7 @@ import DoctorWithoutLeg from './story/doctors/DoctorWithoutLeg.png';
 import LegDoctor from './story/doctors/LegDoctor.png';
 
 //  voice
-// import mp3_story1 from './voice/mp3_story1.m4a';
+import mp3_story1 from './voice/mp3_story1.m4a';
 import mp3_story2 from './voice/mp3_story2.m4a';
 import mp3_story3 from './voice/mp3_story3.m4a';
 import mp3_story4 from './voice/mp3_story4.m4a';
@@ -179,7 +179,7 @@ export {
 	LegDoctor,
 
 	// voice
-	// mp3_story1,
+	mp3_story1,
 	mp3_story2,
 	mp3_story3,
 	mp3_story4,
