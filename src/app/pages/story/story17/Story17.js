@@ -17,8 +17,8 @@ export const Story17 = () => {
 			<img alt="Zieke Grote Boom" className="story17__tree" src={Assets.SickTree2}></img>
 			<img alt="Snuitertje" className="story17__snuitertje" src={Assets.SnuitertjeStand}></img>
 			<img alt="Vergrootglas" className="story17__magnifyingGlass" src={Assets.MagnifyingGlass} onClick={ () => history.push('/story/18') }></img>
-			<img alt="Dokter" className="story17__doctor" src={Assets.DoctorTree}></img>
-			
+			<img alt="Dokter" className="story17__doctor-leg" src={Assets.LegDoctor2}></img>
+			<img alt="Dokter" className="story17__doctor-withoutLeg" src={Assets.DoctorWithoutLeg}></img>
 			<p className="story17__text">
 			Nu is het tijd voor een nieuwe behandeling.
 			De dokter tekent lijnen op de schors. 

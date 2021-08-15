@@ -10,37 +10,10 @@
 		width: 281px;
 		height: 272px;
 	}
-	&__bird {
-		position: absolute;
-		right: 0;
-		padding: 80px 60px;
-		width: 320px;
-		height: 186px;
-		
-		animation: 
-			bird ease-in-out 25s infinite, 
-	}
 	&__tree {
 		position: absolute;
 		height: 100vh;
 		max-width: 80vw;
-
-	}
-	&__doctor {
-		position: absolute;
-		top: 0;
-		left: 14vw;
-		width: 240px;
-		height: 366px;
-		z-index: 1;
-	}
-	&__doctor-leg {
-		position: absolute;
-		top: 2vh;
-		left: 14vw;
-		width: 240px;
-		height: 366px;
-		animation: doctorLeg cubic-bezier(.81,.33,.35,.91) 2.5s infinite;
 	}
 	&__snuitertje {
 		position: absolute;
@@ -85,20 +58,3 @@
 	}
 }
 
-@keyframes doctorLeg {
-	0% {
-		transform: rotate(13deg) translate(-2px, 6px);
-	}
-	50%{
-		transform: rotate(-10deg) translate(-10px, -10px);
-	}
-	100% {
-		transform: rotate(13deg) translate(-2px, 6px);
-	}
-}
-@keyframes bird {
-	0% {transform: translateX(30vw) rotate(10deg) translateY(20px); } 
-	50% {transform: rotate(-5deg) translateY(20px); } 
-	100% {transform: translateX(-80vw) translateY(20px); }
-
-}

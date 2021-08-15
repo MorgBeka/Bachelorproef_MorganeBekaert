@@ -2,7 +2,7 @@ import { default as React, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import Draggable from 'react-draggable';
 import * as Assets from '../../../assets';
-import { Header, Footer } from '../../../components';
+import { Header, Footer, Bird, DoctorLeg } from '../../../components';
 import { useAudio } from "../../../utilities/audio";
 
 import './story06.scss';
@@ -29,12 +29,9 @@ export const Story06 = () => {
 		<div className="story06">
 			<Header/>
 			<img alt="Zon" className="story06__sun" src={Assets.Sun}></img>
-			<img alt="Vogel" className="story06__bird" src={Assets.Bird}></img>
+			<Bird/>
 			<img alt="Grote Boom" className="story06__tree" src={Assets.TreeSickBranch}></img>
-
-			<img alt="Dokter" className="story06__doctor" src={Assets.DoctorWithoutLeg}></img>
-			<img alt="Dokter" className="story06__doctor-leg" src={Assets.LegDoctor}></img>
-
+			<DoctorLeg/>
 			<img alt="Snuitertje" className="story06__snuitertje" src={Assets.SnuitertjeStand}></img>
 			<img alt="Dokterstas" className="story06__kit" src={Assets.KitWithoutSaw}></img>
 

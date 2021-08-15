@@ -1,7 +1,6 @@
 import { default as React } from 'react';
-import { useHistory } from 'react-router-dom';
 import * as Assets from '../../../assets';
-import { Header, Footer } from '../../../components';
+import { Header, Footer, Sunshine } from '../../../components';
 import { useAudio } from "../../../utilities/audio";
 
 import './story16.scss';
@@ -14,10 +13,9 @@ export const Story16 = () => {
 	return (
 		<div className="story16">
 			<Header/>
-			<img alt="Zon" className="story08__sun" src={Assets.Sun}></img>
+			<Sunshine/>
 			<img alt="Zieke Grote Boom met sjaal" className="story16__tree" src={Assets.SickTreeSharp}></img>
 			<img alt="Snuitertje" className="story16__snuitertje" src={Assets.SnuitertjeBlanket}></img>
-			{/* <img alt="Dokter" className="story16__doctor" src={Assets.DoctorStand}></img> */}
 			<img alt="Dokter" className="story16__doctor" src={Assets.DoctorStand}></img>
 
 			<p className="story16__text">

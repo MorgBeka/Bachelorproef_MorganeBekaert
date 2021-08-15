@@ -10,16 +10,6 @@
 		width: 281px;
 		height: 272px;
 	}
-	&__bird {
-		position: absolute;
-		right: 0;
-		padding: 80px 60px;
-		width: 320px;
-		height: 186px;
-
-		animation: 
-			bird ease-in-out 25s infinite, 
-	}
 	&__tree {
 		position: absolute;
 		height: 100vh;
@@ -63,9 +53,4 @@
 		&-element {}
 	}
 }
-@keyframes bird {
-	0% {transform: translateX(30vw) rotate(10deg) translateY(20px); } 
-	50% {transform: rotate(-5deg) translateY(20px); } 
-	100% {transform: translateX(-80vw) translateY(20px); }
 
-}

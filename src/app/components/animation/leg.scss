@@ -1,0 +1,63 @@
+
+.snuitertje{
+	&__withoutleg{
+		position: absolute;
+		bottom: 9vh;
+		left: 18vw;
+		width: 190px;
+		height: 316px;	
+	}
+	&__leg {
+		position: absolute;
+		bottom: 13vh;
+		left:  27vw;
+		width: 45px;
+		height: 81.5px;
+		object-fit: contain;
+		transform-origin: top center;
+		animation: leg cubic-bezier(.81,.33,.35,.91) 2.5s infinite;
+	}
+}
+.doctor{
+	&__withoutLeg{
+		position: absolute;
+		top: 0;
+		left: 14vw;
+		width: 240px;
+		height: 366px;
+		z-index: 1;
+	}
+	&__leg{
+		position: absolute;
+		top: 2vh;
+		left: 14vw;
+		width: 240px;
+		height: 366px;
+		animation: doctorLeg cubic-bezier(.81,.33,.35,.91) 2.5s infinite;
+	}
+}
+
+@keyframes leg {
+	0% {
+		transform: rotate(23deg) translate(-3px, 6px);
+	}
+	50%{
+		transform: rotate(-10deg) translate(-10px, -10px);
+	}
+	100% {
+		transform: rotate(23deg) translate(-3px, 6px);
+	}
+}
+
+
+@keyframes doctorLeg {
+	0% {
+		transform: rotate(13deg) translate(-2px, 6px);
+	}
+	50%{
+		transform: rotate(-10deg) translate(-10px, -10px);
+	}
+	100% {
+		transform: rotate(13deg) translate(-2px, 6px);
+	}
+}

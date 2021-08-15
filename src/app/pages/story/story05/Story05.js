@@ -11,7 +11,6 @@ export const Story05 = () => {
 
 	const currentAudio = useAudio(Assets.mp3_story5);
 
-
 	const styleSheet = document.styleSheets[0];
 	const moon = 
 	`@-webkit-keyframes moon {

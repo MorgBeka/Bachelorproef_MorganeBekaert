@@ -1,0 +1,16 @@
+.bird {
+	position: absolute;
+	right: 0;
+	padding: 80px 60px;
+	width: 320px;
+	height: 186px;
+
+	animation: 
+		bird ease-in-out 15s infinite, 
+}
+@keyframes bird {
+	0% {transform: translateX(30vw) rotate(10deg) translateY(20px); } 
+	50% {transform: rotate(-5deg) translateY(20px); } 
+	100% {transform: translateX(-80vw) translateY(20px); }
+
+}

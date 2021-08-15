@@ -29,11 +29,22 @@
 		left: 2vw;
 	}
 	&__doctor {
-		position: absolute;
-		top: 17vh;
-		left: 22vw;
-		width: 240px;
-		height: 366px;
+		&-withoutLeg{
+			position: absolute;
+			top: 17vh;
+			left: 22vw;
+			width: 240px;
+			height: 366px;
+			z-index: 1;
+		}
+		&-leg{
+			position: absolute;
+			top: 19vh;
+			left: 22vw;
+			width: 240px;
+			height: 366px;
+			animation: doctorLeg cubic-bezier(.81,.33,.35,.91) 2.5s infinite;
+		}
 	}
 	&__sickBranch {
 		position: absolute;

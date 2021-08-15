@@ -2,7 +2,7 @@ import { default as React, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import Draggable from 'react-draggable';
 import * as Assets from '../../../assets';
-import { Header, Footer } from '../../../components';
+import { Header, Footer, Sunshine, DoctorLeg } from '../../../components';
 import { useAudio } from "../../../utilities/audio";
 
 import './story07.scss';
@@ -26,14 +26,12 @@ export const Story07 = () => {
 	return (
 		<div className="story07">
 			<Header/>
-			<img alt="Zonnestralen" className="story07__sunshine" src={Assets.Sunshine}></img>
-			<img alt="Zon" className="story07__sun" src={Assets.Sun2}></img>
+			<Sunshine/>
 			<img alt="Vogel" className="story07__bird" src={Assets.Bird}></img>
 			<img alt="Grote Boom" className="story07__tree" src={Assets.TreeWithoutSickBranch}></img>
 			<img alt="Snuitertje" className="story07__snuitertje" src={Assets.SnuitertjeStand}></img>
 			<img alt="Zaag" className="story07__saw" src={Assets.Saw}></img>
-			<img alt="Dokter" className="story07__doctor" src={Assets.DoctorWithoutLeg}></img>
-			<img alt="Dokter" className="story07__doctor-leg" src={Assets.LegDoctor}></img>
+			<DoctorLeg/>
 			<img alt="Dokterstas" className="story07__kit" src={Assets.KitWithoutSaw}></img>
 -			
 			<p className="story07__text">Trek nu aan de zieke tak om de dokter te helpen.

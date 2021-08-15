@@ -76,6 +76,7 @@ import DoctorStone from './story/doctors/DoctorStone.png';
 import DoctorTree from './story/doctors/DoctorTree.png';
 import DoctorWithoutLeg from './story/doctors/DoctorWithoutLeg.png';
 import LegDoctor from './story/doctors/LegDoctor.png';
+import LegDoctor2 from './story/doctors/LegDoctor2.png';
 
 //  voice
 import mp3_story1 from './voice/mp3_story1.m4a';
@@ -177,6 +178,7 @@ export {
 	DoctorTree,
 	DoctorWithoutLeg,
 	LegDoctor,
+	LegDoctor2,
 
 	// voice
 	mp3_story1,

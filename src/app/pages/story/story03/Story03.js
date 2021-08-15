@@ -1,7 +1,7 @@
 import { default as React, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import * as Assets from '../../../assets';
-import { Header, Footer } from '../../../components';
+import { Header, Footer, Bird } from '../../../components';
 import { useAudio } from "../../../utilities/audio";
 
 import './story03.scss';
@@ -36,8 +36,8 @@ export const Story03 = () => {
 		<div className="story03">
 			<Header/>
 			<img alt="Zon" className="story03__sun" src={Assets.Sun}></img>
-			<img alt="Vogel" className="story03__bird" src={Assets.Bird}></img>
-			<img alt="Grore Boom" className="story03__tree" src={Assets.TreeGame}></img>
+			<Bird/>
+			<img alt="Grote Boom" className="story03__tree" src={Assets.TreeGame}></img>
 			<img alt="Snuitertje" className="story03__snuitertje" src={Assets.SnuitertjeStand}></img>
 
 			<h2 className="story03__text">Snuitertje speelt graag spelletjes met Grote Boom.

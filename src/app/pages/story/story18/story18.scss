@@ -26,11 +26,21 @@
 		height: 350px;
 	}
 	&__doctor{
-		transform: scale(-1,1);		
-		width: 201px;
-		height: 261px;
-		padding-right: 900px;
-		padding-top: 210px;
+		&-withoutLeg{
+			transform: scale(-1,1);		
+			width: 201px;
+			height: 261px;
+			padding-right: 900px;
+			padding-top: 210px;
+		}	
+		&-leg{
+			position: absolute;
+			top: 35vh;
+			right: 5vw;
+			width: 201px;
+			height: 261px;
+			animation: doctorLeg cubic-bezier(.81,.33,.35,.91) 2.5s infinite;
+		}
 	}
 	&__text {
 		position: absolute;

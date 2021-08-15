@@ -2,7 +2,7 @@ import { default as React, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import Draggable from 'react-draggable';
 import * as Assets from '../../../assets';
-import { Header, Footer } from '../../../components';
+import { Header, Footer, Sunshine } from '../../../components';
 import { useAudio } from "../../../utilities/audio";
 
 import './story08.scss';
@@ -26,11 +26,13 @@ export const Story08 = () => {
 	return (
 		<div className="story08">
 			<Header/>
-			<img alt="Zon" className="story08__sun" src={Assets.Sun}></img>
+			<Sunshine/>
 			<img alt="Grote Boom" className="story08__tree" src={Assets.TreeWithoutSickBranch}></img>
 			<img alt="Medicijn" className="story08__medicin" src={Assets.Medicin}></img>
 			<img alt="Pleister" className="story08__plaster" src={Assets.Plaster}></img>
-			<img alt="Dokter" className="story08__doctor" src={Assets.DoctorTree}></img>
+			<img alt="Dokter" className="story08__doctor-withoutLeg" src={Assets.DoctorWithoutLeg}></img>
+			<img alt="Dokter" className="story08__doctor-leg" src={Assets.LegDoctor}></img>
+
 			<img alt="Zieke tak" className="story08__sickBranch" src={Assets.SickBranch2}></img>
 			<img alt="Dokterstas" className="story08__kit" src={Assets.KitWithoutSaw}></img>
 			<img alt="Zaag" className="story08__saw" src={Assets.Saw}></img>
