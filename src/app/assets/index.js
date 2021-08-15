@@ -61,9 +61,9 @@ import SickTree from './story/trees/SickTree.png';
 import SickTree2 from './story/trees/SickTree2.png';
 import SickTree3 from './story/trees/SickTree3.png';
 import SickTreeSharp from './story/trees/SickTreeSharp.png';
+import Swing from './story/trees/Swing.png';
 import TreeCured from './story/trees/TreeCured.png';
 import TreeCuredWithoutSwing from './story/trees/TreeCuredWithoutSwing.png';
-import Swing from './story/trees/Swing.png';
 import TreeGame from './story/trees/TreeGame.png';
 import TreeStart from './story/trees/TreeStart.png';
 import TreeStartWithousSnuiter from './story/trees/TreeStartWithousSnuiter.png';
@@ -77,7 +77,6 @@ import DoctorTree from './story/doctors/DoctorTree.png';
 import DoctorWithoutLeg from './story/doctors/DoctorWithoutLeg.png';
 import LegDoctor from './story/doctors/LegDoctor.png';
 import LegDoctor2 from './story/doctors/LegDoctor2.png';
-
 //  voice
 import mp3_story1 from './voice/mp3_story1.m4a';
 import mp3_story2 from './voice/mp3_story2.m4a';
@@ -163,9 +162,9 @@ export {
 	SickTree2,
 	SickTree3,
 	SickTreeSharp,
+	Swing,
 	TreeCured,
 	TreeCuredWithoutSwing,
-	Swing,
 	TreeGame,
 	TreeStart,
 	TreeStartWithousSnuiter,
@@ -179,7 +178,6 @@ export {
 	DoctorWithoutLeg,
 	LegDoctor,
 	LegDoctor2,
-
 	// voice
 	mp3_story1,
 	mp3_story2,

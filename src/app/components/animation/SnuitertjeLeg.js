@@ -7,7 +7,7 @@ const SnuitertjeLeg = () => {
 
 	return (
 		<div className="snuitertje">
-		<img alt="Been Snuitertje" className="snuitertje__leg" src={Images.Leg}></img>
+			<img alt="Been Snuitertje" className="snuitertje__leg" src={Images.Leg}></img>
 			<img alt="Snuitertje" className="snuitertje__withoutleg" src={Images.SnuitertjeWithoutLeg}></img>
 		</div>
 	)

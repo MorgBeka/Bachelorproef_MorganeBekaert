@@ -7,12 +7,12 @@ const StoryRiverLayout = ({children}) => {
   return (
     <div className="story-river">
 
-	  <div className="story-river__main">
-      	{children}
-	  </div>
+		<div className="story-river__main">
+	      	{children}
+		</div>
 
-	  <img className="story-light__background" src={Images.SkyRiver}></img>
-    
+		<img alt="Rivier" className="story-light__background" src={Images.SkyRiver}></img>
+	    
 	</div>
   );
 };

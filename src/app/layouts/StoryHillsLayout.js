@@ -7,12 +7,12 @@ const StoryHillsLayout = ({children}) => {
   return (
     <div className="story-hills">
 
-	  <div className="story-hills__main">
-      	{children}
-	  </div>
+		<div className="story-hills__main">
+	      	{children}
+		</div>
 
-	  <img className="story-hills__background" src={Images.BackgroundHills}></img>
-    
+		<img alt="Heuvels" className="story-hills__background" src={Images.BackgroundHills}></img>
+	    
 	</div>
   );
 };

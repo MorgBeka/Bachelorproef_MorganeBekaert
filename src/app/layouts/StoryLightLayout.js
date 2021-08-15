@@ -7,12 +7,12 @@ const StoryLightLayout = ({children}) => {
   return (
     <div className="story-light">
 
-	  <div className="story-light__main">
-      	{children}
-	  </div>
+		<div className="story-light__main">
+	      	{children}
+		</div>
 
-	  <img className="story-light__background" src={Images.BackgroundLight}></img>
-    
+		<img alt="Blauwe lucht" className="story-light__background" src={Images.BackgroundLight}></img>
+	    
 	</div>
   );
 };

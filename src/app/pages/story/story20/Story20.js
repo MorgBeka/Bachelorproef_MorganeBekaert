@@ -25,8 +25,6 @@ export const Story20 = () => {
 		e.classList.add('hovered');
 	}
 
-
-
 	return (
 		<div className="story20">
 			

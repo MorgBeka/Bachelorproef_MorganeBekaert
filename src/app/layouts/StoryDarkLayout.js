@@ -7,12 +7,12 @@ const StoryDarkLayout = ({children}) => {
   return (
     <div className="story-dark">
 
-	  <div className="story-dark__main">
-      	{children}
-	  </div>
+		<div className="story-dark__main">
+	      	{children}
+		</div>
 
-	  <img className="story-dark__background" src={Images.BackgroundDark}></img>
-    
+		<img alt="Donkere lucht" className="story-dark__background" src={Images.BackgroundDark}></img>
+	    
 	</div>
   );
 };

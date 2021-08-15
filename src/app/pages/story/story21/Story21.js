@@ -1,7 +1,7 @@
 import { default as React } from 'react';
 import { useHistory } from 'react-router-dom';
 import * as Assets from '../../../assets';
-import { Header, Footer } from '../../../components';
+import { Header, Footer, Sunshine } from '../../../components';
 import { useAudio } from "../../../utilities/audio";
 
 import './story21.scss';
@@ -14,8 +14,8 @@ export const Story21 = () => {
 	return (
 		<div className="story21">
 			<Header/>
-			<img alt="Zonnestralen" className="story21__sunshine" src={Assets.Sunshine}></img>
-			<img alt="Zon" className="story21__sun" src={Assets.Sun2}></img>			<img alt="Genezen Grote Boom" className="story21__tree" src={Assets.TreeCuredWithoutSwing}></img>
+			<Sunshine/>		
+			<img alt="Genezen Grote Boom" className="story21__tree" src={Assets.TreeCuredWithoutSwing}></img>
 			<img alt="Schommel" className="story21__swing" src={Assets.Swing}></img>
 			<img alt="Schaap en konijn" className="story21__sheepBunnny" src={Assets.SheepBunny}></img>
 			<img alt="Bokaal met boompje" className="story21__jar" src={Assets.JarWithTree}></img>

@@ -15,6 +15,4 @@ export {
 	Header,
 	SnuitertjeLeg,
 	Sunshine,
-
-
 }

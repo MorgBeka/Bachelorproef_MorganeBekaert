@@ -9,7 +9,7 @@ const Header = () => {
 
 	return (
 		<div className="header">
-			<img className="header__buttonHome" src={Assets.ButtonHome} onClick={ () => history.push('/') }></img>
+			<img alt="Terug naar menu" className="header__buttonHome" src={Assets.ButtonHome} onClick={ () => history.push('/') }></img>
 		</div>
 	)
 }
