@@ -29,9 +29,11 @@
 	}
 	&__swing{
 		position: absolute;
-		height: 90vh;
-		right: 0;
-		animation: swing cubic-bezier(0,0,50,80) 2.5s infinite;
+		height: 30vh;
+		top: 28vh;
+		right: 13vw;
+		animation: swing cubic-bezier(0,0,.50,.80) 2.5s infinite;
+		transform-origin: 180px;
 
 	}
 	&__sheepBunnny {
@@ -69,13 +71,13 @@
 }
 @keyframes swing {
 	0% {
-		transform: rotate(-10deg) translate(-10px, -10px);
+		transform: rotate(-15deg) translate(-5px, -5px);
 	}
 	50%{
-		transform: rotate(23deg) translate(-3px, 6px);
+		transform: rotate(3deg) translate(-3px, 6px);
 	}
 	100% {
-		transform: rotate(-10deg) translate(-10px, -10px);
+		transform: rotate(-15deg) translate(-5px, -5px);
 	}
 }
 @keyframes sunshine {
