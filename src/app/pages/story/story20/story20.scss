@@ -14,6 +14,8 @@
 		bottom: 8vh;
 		left: 17vw;
 		height: 366px;
+		animation: 
+			snuiter ease-out 6s forwards,
 	}
 	&__jar{
 		position: absolute;
@@ -57,4 +59,8 @@
 		width: 163px;
 		height: 211px;
 	}
+}
+@keyframes snuiter {
+	0% {transform: translateX(-30vw) translateY(90px); } 
+	50% {transform: translateX(-25vw) translateY(90px); } 
 }
