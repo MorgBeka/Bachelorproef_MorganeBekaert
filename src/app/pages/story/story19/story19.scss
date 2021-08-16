@@ -12,14 +12,14 @@
 	&__snuitertje {
 		position: absolute;
 		bottom: 8vh;
-		right: 4vw;
-		height: 366px;
-		transform: scale(-1,1);		
+		right: 20vw;
+		height: 366px;		
+		animation: snuitertje 10s 3s infinite;
 	}
 	&__jar{
 		position: absolute;
 		bottom: 10vh;
-		right: 10vw;
+		right: 11vw;
 		width: 128px;
 		height: 166px;
 	}
@@ -34,3 +34,11 @@
 		width: 25vw;
 	}
 }
+
+@keyframes snuitertje {
+	0% {transform: rotate(10deg); }
+	50% {transform: rotate(20deg); }
+	100% {transform: rotate(10deg) ; }
+}
+
+

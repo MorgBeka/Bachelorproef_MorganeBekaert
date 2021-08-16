@@ -54,7 +54,6 @@ import SnuitertjeHug from './story/snuitertjes/SnuitertjeHug.png';
 import SnuitertjeStand from './story/snuitertjes/SnuitertjeStand.png';
 import SnuitertjeWithoutLeg from './story/snuitertjes/SnuitertjeWithoutLeg.png';
 import Leg from './story/snuitertjes/Leg.png';
-
 //	Trees
 import OtherTree from './story/trees/OtherTree.png';
 import SickTree from './story/trees/SickTree.png';
@@ -69,6 +68,9 @@ import TreeStart from './story/trees/TreeStart.png';
 import TreeStartWithousSnuiter from './story/trees/TreeStartWithousSnuiter.png';
 import TreeSickBranch from './story/trees/TreeSickBranch.png';
 import TreeWithoutSickBranch from './story/trees/TreeWithoutSickBranch.png';
+import TreeWithoutLeaves from './story/trees/TreeWithoutLeaves.png';
+import Leaves1 from './story/trees/Leaves1.png';
+import Leaves2 from './story/trees/Leaves2.png';
 // Doctor
 import DoctorStand from './story/doctors/DoctorStand.png';
 import DoctorStetoscope from './story/doctors/DoctorStetoscope.png';
@@ -170,6 +172,10 @@ export {
 	TreeStartWithousSnuiter,
 	TreeSickBranch,
 	TreeWithoutSickBranch,
+	TreeWithoutLeaves,
+	Leaves1,
+	Leaves2,
+
 	// Doctor
 	DoctorStand,
 	DoctorStetoscope,

@@ -6,9 +6,7 @@ import './bird.scss';
 const Bird = () => {
 
 	return (
-
 		<img alt="Vogel" className="bird" src={Images.Bird}></img>
-
 	)
 }
 

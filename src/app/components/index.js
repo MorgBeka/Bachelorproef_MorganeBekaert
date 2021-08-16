@@ -5,6 +5,7 @@ import Footer from './footer/Footer';
 import Header from './header/Header';
 import SnuitertjeLeg from './animation/SnuitertjeLeg';
 import Sunshine from './animation/Sunshine';
+import Leaves from './animation/Leaves';
 
 
 export {
@@ -15,4 +16,5 @@ export {
 	Header,
 	SnuitertjeLeg,
 	Sunshine,
+	Leaves,
 }

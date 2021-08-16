@@ -16,7 +16,7 @@ export const Story19 = () => {
 			<Header/>
 			<img alt="Zieke Grote Boom" className="story19__tree" src={Assets.SickTree3}></img>
 			<img alt="Snuitertje" className="story19__snuitertje" src={Assets.SnuitertjeStand}></img>
-			<img alt=" Lege bokaal" className="story09__jar" src={Assets.JarProgress}></img>
+			<img alt=" Lege bokaal" className="story19__jar" src={Assets.JarProgress}></img>
 
 			
 			<p className="story19__text">

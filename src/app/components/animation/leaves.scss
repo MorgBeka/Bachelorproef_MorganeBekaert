@@ -1,0 +1,30 @@
+.leaves{
+	&__1 {
+		position: absolute;
+		height: 100vh;
+		max-width: 80vw;
+	
+		animation: 
+			leaves ease-out 2s infinite, 
+	}
+	&__2 {
+		position: absolute;
+		height: 100vh;
+		max-width: 80vw;
+	
+		animation: 
+			leaves2 ease-out 2s infinite, 
+	}
+	
+}
+
+@keyframes leaves {
+	0% {transform: rotate(1deg); }
+	50% {transform: rotate(2deg); }
+	100% {transform: rotate(1deg); }
+}
+@keyframes leaves2 {
+	0% {transform: rotate(2deg); }
+	50% {transform: rotate(1deg); }
+	100% {transform: rotate(2deg); }
+}

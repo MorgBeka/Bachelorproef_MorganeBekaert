@@ -2,7 +2,7 @@ import { default as React, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import Draggable from 'react-draggable';
 import * as Assets from '../../../assets';
-import { Header, Footer } from '../../../components';
+import { Header, Footer, Leaves } from '../../../components';
 import { useAudio } from "../../../utilities/audio";
 
 import './story09.scss';
@@ -30,7 +30,10 @@ export const Story09 = () => {
 		<div className="story09">
 			<Header/>
 			<img alt="Zon" className="story09__sun" src={Assets.Sun}></img>
-			<img alt="Grote Boom" className="story09__tree" src={Assets.TreeWithoutSickBranch}></img>
+			{/* <img alt="Grote Boom" className="story09__tree" src={Assets.TreeWithoutSickBranch}></img> */}
+			
+			<img alt="Grote Boom" className="story09__tree" src={Assets.TreeWithoutLeaves}></img>
+			<Leaves/>
 			<img alt="Medicijn" className="story09__medicin" src={Assets.Medicin}></img>
 			<img alt="Pleister" className="story09__plaster" src={Assets.Plaster}></img>
 			<img alt="Zieke tak" className="story08__sickBranch" src={Assets.SickBranch2}></img>
