@@ -27,7 +27,7 @@
 		width: 100px;
 		height: 149px;
 		animation: 
-			doctor ease-out 15s forwards;
+			doctor16 ease-out 15s forwards;
 	}
 	&__text {
 		position: absolute;
@@ -40,7 +40,7 @@
 		width: 35vw;
 	}
 }
-@keyframes doctor {
+@keyframes doctor16 {
 	0% {transform: translateX(5vw) rotate(10deg) translateY(20px); } 
 	50% {transform: rotate(-5deg) translateX(-35vw) translateY(90px); } 
 	100% {transform: translateX(-30vw) translateY(90px); }

@@ -36,11 +36,12 @@
 	&__doctor {
 		position: absolute;
 		bottom: 0;
+		left: 0;
 		width: 430px;
 		height: 512px;
 
 		animation: 
-			doctor ease-out 10s forwards, 
+			doctor04 ease-out 10s forwards,
 			doctor_listining ease-in-out 10s 10s infinite;
 	}	
 	&__text {
@@ -54,7 +55,7 @@
 		width: 400px;
 	}
 }	
-@keyframes doctor {
+@keyframes doctor04 {
 	0% {transform: translateX(30vw) rotate(10deg) translateY(20px); } 
 	50% {transform: rotate(-5deg) translateY(20px); } 
 	100% {transform: translateX(30px) translateY(20px); }

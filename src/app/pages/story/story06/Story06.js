@@ -14,16 +14,26 @@ export const Story06 = () => {
 
 	// 1. Make the ref for the image
 	const sawRef = useRef();
+	const dropzoneRef = useRef();
 
 	const onDrop = (e) => {
-		if (e.classList.contains("hovered")) {
+		if(sawRef.current == null || dropzoneRef.current == null ){
+			return;
+		}
+
+		const sawRefBox = sawRef.current.getBoundingClientRect()
+		const dropzoneRefBox = dropzoneRef.current.getBoundingClientRect()
+		
+		// Check if the two boxes overlap
+		if(!(
+			sawRefBox.right < dropzoneRefBox.left ||
+			sawRefBox.left > dropzoneRefBox.right ||
+			sawRefBox.bottom < dropzoneRefBox.top ||
+			sawRefBox.top > dropzoneRefBox.bottom
+		)) {
 			history.push('/story/7');
 		}
 	};
-
-	const onDropAreaMouseHover = (e) => {
-		e.classList.add('hovered');
-	}
 
 	return (
 		<div className="story06">
@@ -54,7 +64,7 @@ export const Story06 = () => {
 				<img alt="Zaag" className="story06__saw" src={Assets.Saw} ref={sawRef}></img>
 			</Draggable>
 
-			<div id="dropzone6" onMouseOver={() => onDropAreaMouseHover(sawRef.current)}></div>
+			<div id="dropzone6" ref={dropzoneRef}></div>
 
 			<Footer currentAudio={currentAudio} />
 		</div>
