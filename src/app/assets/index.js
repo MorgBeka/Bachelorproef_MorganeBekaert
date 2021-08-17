@@ -11,6 +11,7 @@ import BigStone from './story/atributes/BigStone.png';
 import Blanket from './story/atributes/Blanket.png';
 import Crown from './story/atributes/Crown.png';
 import JarFull from './story/atributes/JarFull.png';
+import JarEmpty from './story/atributes/JarEmpty.png';
 import JarProgress from './story/atributes/JarProgress.png';
 import JarWithSoil from './story/atributes/JarWithSoil.png';
 import JarWithTree from './story/atributes/JarWithTree.png';
@@ -114,6 +115,7 @@ export {
 	BigStone,
 	Blanket,
 	Crown,
+	JarEmpty,
 	JarFull,
 	JarProgress,
 	JarWithSoil,

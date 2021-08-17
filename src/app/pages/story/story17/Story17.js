@@ -27,7 +27,7 @@ export const Story17 = () => {
 			Die kan ik dan wegstralen met deze lens.’
 
 			Snuiter kijkt nieuwsgierig naar het vergrootglas. 
-			<strong> Klik op het vergrootglas</strong> om te zien wat er gebeurt.
+			<br></br><br></br><strong> Klik op het vergrootglas</strong> om te zien wat er gebeurt.
 			</p>
 			
 			<Footer currentAudio={currentAudio} />

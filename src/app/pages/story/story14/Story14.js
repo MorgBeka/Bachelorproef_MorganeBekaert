@@ -12,19 +12,29 @@ export const Story14 = () => {
 	const history = useHistory();
 
 	const crownRef = useRef();
+	const dropzoneRef = useRef();
 
 	const onDrop = (e) => {
 		// console.log('Released the drop component');
-		if (e.classList.contains("hovered")) {
+		if (crownRef.current == null || dropzoneRef.current == null ){
+			return;
+		}
+		
+		const crownRefBox = crownRef.current.getBoundingClientRect()
+		const dropzoneRefBox = dropzoneRef.current.getBoundingClientRect()
+		
+		// Check if the two boxes overlap
+		if(!(
+			crownRefBox.right < dropzoneRefBox.left ||
+			crownRefBox.left > dropzoneRefBox.right ||
+			crownRefBox.bottom < dropzoneRefBox.top ||
+			crownRefBox.top > dropzoneRefBox.bottom
+		)) {
 			history.push('/story/15');
 		}
 	};
 
-	const onDropAreaMouseHover = (e) => {
-		// console.log('Released the drop component inside the dropzone');
-		e.classList.add('hovered');
-	}
-
+	
 	const currentAudio = useAudio(Assets.mp3_story14);
 
 	return (
@@ -48,7 +58,7 @@ export const Story14 = () => {
 			</Draggable>
 
 
-			<div id="dropzone14" onMouseOver={() => onDropAreaMouseHover(crownRef.current)}></div>
+			<div id="dropzone14" ref={dropzoneRef}></div>
 
 			<Footer currentAudio={currentAudio} />
 

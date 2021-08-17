@@ -9,19 +9,32 @@ import './story07.scss';
 
 export const Story07 = () => {
 	const history = useHistory();
+
 	const currentAudio = useAudio(Assets.mp3_story7);
 
 	const branchRef = useRef();
+	const dropzoneRef = useRef();
+
 
 	const onDrop = (e) => {
-		if (e.classList.contains("hovered")) {
+		if (branchRef.current == null || dropzoneRef.current == null ){
+			return;
+		}
+
+		const branchRefBox = branchRef.current.getBoundingClientRect()
+		const dropzoneRefBox = dropzoneRef.current.getBoundingClientRect()
+		
+		// Check if the two boxes overlap
+		if(!(
+			branchRefBox.right < dropzoneRefBox.left ||
+			branchRefBox.left > dropzoneRefBox.right ||
+			branchRefBox.bottom < dropzoneRefBox.top ||
+			branchRefBox.top > dropzoneRefBox.bottom
+		)) {
 			history.push('/story/8');
 		}
 	};
 
-	const onDropAreaMouseHover = (e) => {
-		e.classList.add('hovered');
-	}
 
 	return (
 		<div className="story07">
@@ -42,7 +55,7 @@ export const Story07 = () => {
 				<img alt="Zieke tak" className="story07__sickBranch" src={Assets.SickBranch} ref={branchRef}></img>
 			</Draggable>
 
-			<div id="dropzone7" onMouseOver={() => onDropAreaMouseHover(branchRef.current)}></div>
+			<div id="dropzone7" ref={dropzoneRef}></div>
 			
 			<Footer currentAudio={currentAudio} />
 

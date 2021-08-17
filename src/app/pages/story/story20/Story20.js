@@ -9,21 +9,31 @@ import './story20.scss';
 
 export const Story20 = () => {
 	const history = useHistory();
-	const acornRef = useRef();
-
 	const currentAudio = useAudio(Assets.mp3_story20);
 
+	const acornRef = useRef();
+	const dropzoneRef = useRef();
+
+	
 	const onDrop = (e) => {
 		// console.log('Released the drop component');
-		if (e.classList.contains("hovered")) {
+		if (dropzoneRef.current == null || dropzoneRef.current == null ){
+			return;
+		}
+
+		const acornRefBox = acornRef.current.getBoundingClientRect()
+		const dropzoneRefBox = dropzoneRef.current.getBoundingClientRect()
+		
+		// Check if the two boxes overlap
+		if(!(
+			acornRefBox.right < dropzoneRefBox.left ||
+			acornRefBox.left > dropzoneRefBox.right ||
+			acornRefBox.bottom < dropzoneRefBox.top ||
+			acornRefBox.top > dropzoneRefBox.bottom
+		)) {
 			history.push('/story/21');
 		}
 	};
-
-	const onDropAreaMouseHover = (e) => {
-		// console.log('Released the drop component inside the dropzone');
-		e.classList.add('hovered');
-	}
 
 	return (
 		<div className="story20">
@@ -47,7 +57,7 @@ export const Story20 = () => {
 				<img alt="Eikel" className="story20__acorn" src={Assets.Acorn} ref={acornRef}></img>
 			</Draggable>
 
-			<div id="dropzone20" onMouseOver={() => onDropAreaMouseHover(acornRef.current)}></div>
+			<div id="dropzone20" ref={dropzoneRef}></div>
 
 			<Footer currentAudio={currentAudio} />
 

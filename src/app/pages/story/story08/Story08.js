@@ -12,16 +12,28 @@ export const Story08 = () => {
 	const currentAudio = useAudio(Assets.mp3_story8);
 
 	const snuitertjeRef = useRef();
+	const dropzoneRef = useRef();
 
 	const onDrop = (e) => {
-		if (e.classList.contains("hovered")) {
+		if (snuitertjeRef.current == null || dropzoneRef.current == null ){
+			return;
+		}
+
+		const snuitertjeRefBox = snuitertjeRef.current.getBoundingClientRect()
+		const dropzoneRefBox = dropzoneRef.current.getBoundingClientRect()
+		
+		// Check if the two boxes overlap
+		if(!(
+			snuitertjeRefBox.right < dropzoneRefBox.left ||
+			snuitertjeRefBox.left > dropzoneRefBox.right ||
+			snuitertjeRefBox.bottom < dropzoneRefBox.top ||
+			snuitertjeRefBox.top > dropzoneRefBox.bottom
+		)) {
 			history.push('/story/9');
 		}
 	};
 
-	const onDropAreaMouseHover = (e) => {
-		e.classList.add('hovered');
-	}
+	
 
 	return (
 		<div className="story08">
@@ -57,7 +69,7 @@ export const Story08 = () => {
 				<img alt="Snuitertje" className="story08__snuitertje" src={Assets.SnuitertjeHug} ref={snuitertjeRef}></img>
 			</Draggable>
 
-			<div id="dropzone8" onMouseOver={() => onDropAreaMouseHover(snuitertjeRef.current)}></div>
+			<div id="dropzone8" ref={dropzoneRef}></div>
 
 			<Footer currentAudio={currentAudio} />
 			

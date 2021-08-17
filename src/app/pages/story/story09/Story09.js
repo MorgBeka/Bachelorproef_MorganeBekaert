@@ -12,18 +12,29 @@ export const Story09 = () => {
 	const currentAudio = useAudio(Assets.mp3_story9);
 
 	const stoneRef = useRef();
+	const dropzoneRef = useRef();
 
 	const onDrop = (e) => {
 		// console.log('Released the drop component');
-		if (e.classList.contains("hovered")) {
+		if (dropzoneRef.current == null || dropzoneRef.current == null ){
+			return;
+		}
+
+		const stoneRefBox = stoneRef.current.getBoundingClientRect()
+		const dropzoneRefBox = dropzoneRef.current.getBoundingClientRect()
+		
+		// Check if the two boxes overlap
+		if(!(
+			stoneRefBox.right < dropzoneRefBox.left ||
+			stoneRefBox.left > dropzoneRefBox.right ||
+			stoneRefBox.bottom < dropzoneRefBox.top ||
+			stoneRefBox.top > dropzoneRefBox.bottom
+		)) {
 			history.push('/story/10');
 		}
-	};
 
-	const onDropAreaMouseHover = (e) => {
-		// console.log('Released the drop component inside the dropzone');
-		e.classList.add('hovered');
-	}
+
+	};
 
 
 	return (
@@ -60,7 +71,7 @@ export const Story09 = () => {
 				<img alt="Steen" className="story09__stone" src={Assets.Stone2} ref={stoneRef}></img>
 			</Draggable>
 
-			<div id="dropzone9" onMouseOver={() => onDropAreaMouseHover(stoneRef.current)}></div>
+			<div id="dropzone9" ref={dropzoneRef}></div>
 
 			<Footer currentAudio={currentAudio} />
 

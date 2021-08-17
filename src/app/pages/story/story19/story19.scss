@@ -33,6 +33,20 @@
 		color: $color-darkBrown;
 		width: 25vw;
 	}
+	&__stone{
+		position: absolute;
+		width: 41px;
+		height: 35px;
+		bottom: 10vh;
+		right: 15vw;	
+	}
+	#dropzone19 {
+		position: absolute;
+		bottom: 20vh;
+		right: 25vw;
+		width: 150px;
+		height: 80px;
+	}	
 }
 
 @keyframes snuitertje {
